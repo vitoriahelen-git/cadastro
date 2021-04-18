@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="br-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div id="principal">
+        <form>
+            <div id="parte1">
+                <h3>Faça o seu cadastro</h3>
+                <label for="nome_us">Nome completo:</label>
+                <input type="text" id="nome_us" name="nome_us" required>
+
+                <label for="email_us">E-mail:</label>
+                <input type="text" id="email_us" name="email_us" required>
+
+                <label for="tel_us">Telefone:</label>
+                <input type="text" id="tel_us" name="tel_us">
+
+            </div>
+
+            <div id="parte2">
+                <label for="end_us">Endereço:</label>
+                <input type="text" id="end_us" name="end_us" required>
+            </div>
+
+                <label for="logradouro_us">Logradouro:</label>
+                <input type="text" id="logradouro_us" name="logradouro_us" required>
+
+                <label for="numero_us">Numero:</label>
+                <input type="text" id="numero_us" name="numero_us" required>
+
+                <label for="bairro_us">Bairro:</label>
+                <input type="text" id="bairro_us" name="bairro_us" required>
+
+                <label for="cidade_us">Cidade:</label>
+                <select name="cidade_us" id="cidade_us">
+                    <option value="0 selected">--- selecione ---</option>
+                    <option value="1">Santos</option>
+                    <option value="2">São Vicente</option>
+                    <option value="3">Itanhaém</option>
+                    <option value="5">Mongaguá</option>
+                    <option value="6">Praia Grande</option>
+                </select>
+
+                <label for="estado_us">Estado:</label>
+                <select name="estado_us" id="estado_us">
+                    <option value="0 selected">--- selecione ---</option>
+                    <option value="1">AP</option>
+                    <option value="2">BA</option>
+                    <option value="2">ES</option>
+                    <option value="4">AP</option>
+                    <option value="5">SP</option>
+                    <option value="6">MG</option>
+                    <option value="7">RJ</option>
+                </select>
+                <label for="cep_us">CEP:</label>
+                <input type="text" id="cep_us" name="cep_us">
+
+            <label for="estado_cvl_us">Estado Civil:</label>
+
+            <input type="radio" id="estado_cvl_us_solteiro" name="estado_cvl_us">
+            <label for="estado_cvl_us_solteiro">Solteiro(a)</label>
+
+            <input type="radio" id="estado_cvl_us_casado" name="estado_cvl_us">
+            <label for="estado_cvl_us_solteiro">Casado(a)</label>
+
+            <input type="radio" id="estado_cvl_us_divorciado" name="estado_cvl_us">
+            <label for="estado_cvl_us_divorciado">Divorciado(a)</label>
+
+
+            <input type="radio" id="estado_cvl_us_viuvo" name="estado_cvl_us">
+            <label for="estado_cvl_us_viuvo">Víuvo(a)</label>
+
+            <input type="radio" id="estado_cvl_us_separado" name="estado_cvl_us">
+            <label for="estado_cvl_us_separado">Separado(a)</label>
+                
+            <fieldset>
+                <legend>Qual a sua preferência de contato?</legend>
+                <input type="radio" id="email_ctt" name="email_ctt">
+                <label for="email_ctt">E-mail</label>
+
+                <input type="radio" id="tel_ctt" name="tel_ctt">
+                <label for="tel_ctt">Telefone</label>
+            </fieldset>
+            <input type="checkbox" id="li_concordo" name="li_concordo">
+            <label for="li_concordo">Li e concordo</label>
+           
+            <button type="reset">Reiniciar preenchimento</button>
+            <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
